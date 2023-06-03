@@ -93,4 +93,7 @@ function remainingamount() {
     }, 0);
     const finalbudget = totalBudget - totalExpenses;
     document.getElementById("finalbdgt").textContent = finalbudget;
+        if (finalbudget<0) {
+        alert("BUDGET OUT OF RANGE   Please delete the last entered budget or edit it")
+    }
 }
