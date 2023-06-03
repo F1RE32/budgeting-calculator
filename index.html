@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budgeting App</title>
+</head>
+
+<body>
+    <h1><u>BUDGET CALCULATOR</u></h1>
+    <h3>Enter Budget :</h3>
+    <label for="bdgt">Your Budget :</label>
+    <input type="number" id="bdgt">
+    <button onclick="yourbudget()">Add Budget</button>
+    <br>
+    <h3>Enter Expense :</h3>
+    <label for="dsc">Description :</label>
+    <input type="text" id="dsc">
+    &nbsp;
+    <label for="amt">Amount :</label>
+    <input type="number" id="amt">
+    <label for="date">Date :</label>
+    <input type="date" id="date">
+    <button onclick="expenseinfo()">Add Expense</button>
+    <h3>Your Expenses :</h3>
+    <table id="expenseshow">
+        <thead>
+            <tr>
+                <th>Description</th>
+                <th>Amount</th>
+                <th>Date</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody id="expense_show"></tbody>
+    </table>
+    <h3>Remaining Budget: Rs<span id="finalbdgt">0</span></h3>
+
+
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</body>
+
+</html>
